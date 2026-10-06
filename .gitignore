@@ -1,0 +1,25 @@
+﻿# secrets
+keys.json
+config.json
+providers.local.json
+
+# runtime
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.sessions/
+sessions/
+.blankcli_*.history
+
+# build
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

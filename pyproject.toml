@@ -1,0 +1,28 @@
+﻿[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blankcli"
+version = "1.0.0"
+description = "A blank slate for every model - multi-provider LLM CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "UalfTV"}]
+dependencies = [
+    "litellm>=1.50",
+    "rich>=13.0",
+    "prompt_toolkit>=3.0",
+    "requests>=2.31",
+]
+
+[project.urls]
+Homepage = "https://blankengine.pages.dev/"
+
+[project.scripts]
+blankcli = "blankcli:main"
+
+[tool.setuptools]
+py-modules = ["blankcli", "ui", "config", "providers", "tools",
+              "sessions", "themes", "personas"]
